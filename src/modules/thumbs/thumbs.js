@@ -84,7 +84,7 @@ export default function Thumb({ swiper, extendParams, on }) {
       swiper.thumbs.swiper = new SwiperClass(thumbsSwiperParams);
       swiperCreated = true;
     }
-    swiper.thumbs.swiper.$el.addClass(swiper.params.thumbs.thumbsContainerClass);
+    swiper.thumbs.swiper.$el?.addClass(swiper.params.thumbs.thumbsContainerClass);
     swiper.thumbs.swiper.on('tap', onThumbClick);
     return true;
   }
